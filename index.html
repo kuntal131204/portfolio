@@ -1,0 +1,278 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuntal Ghosh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.0/tsparticles.bundle.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #0f0f0f url('https://www.transparenttextures.com/patterns/cubes.png');
+      background-size: cover;
+      background-repeat: repeat;
+      color: #e0e0e0;
+      position: relative;
+      overflow-x: hidden;
+    }#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #121212;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  font-family: 'Orbitron', sans-serif;
+}
+.logo {
+  font-size: 1.6rem;
+}
+nav a {
+  margin-left: 1rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #00ffc0;
+}
+
+section {
+  padding: 100px 20px 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.hero {
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 2s ease;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+}
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  max-width: 700px;
+}
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #00ffc0;
+  border-bottom: 2px solid #00ffc0;
+  display: inline-block;
+}
+.education-box {
+  border-left: 4px solid #00ffc0;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: #1a1a1a;
+}
+.education-box strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+ul li::before {
+  content: '✔';
+  margin-right: 0.5rem;
+  color: #00ffc0;
+}
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+.social-links a {
+  color: #00ffc0;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.social-links a:hover {
+  text-shadow: 0 0 10px #00ffc0;
+}
+
+.chat-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00ffc0;
+  color: #121212;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px #00ffc0;
+  z-index: 1000;
+}
+.chat-float:hover {
+  background: #00e6b8;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeInRight {
+  from { opacity: 0; transform: translateX(50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#about { animation: fadeInUp 1s ease; }
+#education { animation: fadeInLeft 1s ease; }
+#skills { animation: fadeInRight 1s ease; }
+#web { animation: fadeInUp 1s ease; }
+#hobbies { animation: fadeInLeft 1s ease; }
+#resume { animation: fadeInRight 1s ease; }
+#contact { animation: fadeInUp 1s ease; }
+#blog { animation: fadeInUp 1s ease; }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav a {
+    margin: 0.5rem 0.8rem 0 0;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div id="tsparticles"></div>  <header>
+    <div class="logo">Kuntal Ghosh</div>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#web">Web Tech</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#resume">Resume</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>  <section class="hero">
+    <h1>Hello, I'm Kuntal Ghosh</h1>
+    <p>B.Tech CSE student specializing in IOT, CS & BCT -- passionate about AI & ML, and real-world problem solving.</p>
+  </section>  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I am a passionate IOT, CS & BCT student currently pursuing a B.Tech at the University of Engineering and Management, Kolkata. I specialize in Generative AI and Machine Learning, with a strong foundation in programming languages, web technologies, and database management. My goal is to leverage technology to solve real-world problems and contribute to advancements in AI. I am eager to collaborate on innovative projects and continuously learn to stay at the forefront of technology.</p>
+  </section>  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="education-box">
+      <strong>Secondary Education</strong>
+      Rukanpur High School,<br>Rukunpur, M.S.D., India (2021)
+    </div>
+    <div class="education-box">
+      <strong>Higher Secondary Education (PCMB)</strong>
+      Krishnath College School,<br>Berhampore, M.S.D., India (2023)
+    </div>
+    <div class="education-box">
+      <strong>Bachelor of Technology (CSE - IOT, CS & BCT)</strong>
+      University of Engineering and Management,<br>Kolkata, India (2025 - present)
+    </div>
+  </section>  <section id="skills">
+    <h2 class="section-title">Skill Summary</h2>
+    <ul>
+      <li>C</li>
+      <li>Java</li>
+      <li>Python</li>
+    </ul>
+  </section>  <section id="web">
+    <h2 class="section-title">Web Technologies</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS3</li>
+    </ul>
+  </section>  <section id="hobbies">
+    <h2 class="section-title">Hobbies</h2>
+    <ul>
+      <li>Coding</li>
+      <li>Reading Books</li>
+      <li>Football</li>
+    </ul>
+  </section>  <section id="resume">
+    <h2 class="section-title">Resume</h2>
+    <p style="margin-top: 10px;"><a href="resume.pdf" download style="font-weight:600; color:#00ffc0; text-decoration: underline;">Download My Resume</a></p>
+  </section>  <section id="blog">
+    <h2 class="section-title">Blog</h2>
+    <p>Coming soon: Articles and insights on AI, IoT, and web technologies written by me.</p>
+  </section>  <section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Want to collaborate or have a question? Reach out via email or connect with me on social media!</p>
+    <div class="social-links">
+      <a href="mailto:business.teamkuntal@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/kuntal-ghosh-0b73a2359" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/_unscripted_lens" target="_blank">Instagram</a>
+      <a href="https://wa.me/918167534503" target="_blank">WhatsApp</a>
+      <a href="tel:+918167534503">Phone</a>
+    </div>
+  </section><a href="mailto:business.teamkuntal@gmail.com" class="chat-float" title="Chat">💬</a>
+
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: false },
+      background: { color: "transparent" },
+      particles: {
+        number: { value: 80 },
+        size: { value: 2 },
+        move: { enable: true, speed: 1 },
+        links: { enable: true, color: "#00ffc0" },
+        color: { value: "#00ffc0" },
+      },
+    });
+  </script></body>
+</html>
