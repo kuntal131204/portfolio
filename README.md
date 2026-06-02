@@ -1,7 +1,6 @@
-# Portfolio (2025)
+# Portfolio (2026)
 
-Personal portfolio site: project case studies, lightweight 3D and shader demos, bilingual copy (English and German).
-
+Personal portfolio site: project case studies, lightweight 3D and shader demos.
 Built with **Vue 3**, **TypeScript**, and **Vite**. Motion via **GSAP** and **Lenis**, 3D via **three.js**, audio via **Howler**. GLSL is compiled through **vite-plugin-glsl**.
 
 ## Scripts
@@ -27,7 +26,7 @@ Built with **Vue 3**, **TypeScript**, and **Vite**. Motion via **GSAP** and **Le
 
 ## Credits & Attribution
 
-This project was created and designed by David Heckhoff.
+This project was created and designed by Kuntal Ghosh.
 
 If you use this project or substantial parts of its source code as a base for your own portfolio or work, attribution must be preserved.
 
@@ -38,6 +37,6 @@ Please keep:
 - a visible reference to the original project/repository in derivative works
 
 Original portfolio:
--> https://david-hckh.com
+-> https://kuntalghosh.in
 
 Commercial reuse or redistribution of substantial portions of this project without permission is prohibited.
