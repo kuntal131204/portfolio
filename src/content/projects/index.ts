@@ -1,7 +1,16 @@
 import type { Locale } from "../../i18n/types";
 
-//export const projectIds = ["cubewar", "quibbo", "sharkie", "particles", "pokedex"];
-export const projectIds = ["ai-assistant", "data-viz", "nexus", "healthbridge", "todo", "smartghat", "music-player", "portfolio3d"];
+// your projects
+export const projectIds = [
+  "ai-assistant",
+  "data-viz",
+  "nexus",
+  "healthbridge",
+  "todo",
+  "smartghat",
+  "music-player",
+  "portfolio3d"
+];
 
 function simplifyModules(glob: Record<string, any>) {
   const result: Record<string, any> = {};
@@ -12,7 +21,7 @@ function simplifyModules(glob: Record<string, any>) {
   return result;
 }
 
+// ✅ ONLY EN (remove DE completely)
 export const projectModules = {
-  de: simplifyModules(import.meta.glob("./de/*.ts", { eager: true })),
   en: simplifyModules(import.meta.glob("./en/*.ts", { eager: true })),
-} as const satisfies Record<Locale, Record<string, any>>;
+} as const satisfies Record<"en", Record<string, any>>;
