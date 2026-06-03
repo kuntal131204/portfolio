@@ -16,13 +16,14 @@ const emit = defineEmits<{
   (e: "loaded", previews: ProjectPreview[]): void;
 }>();
 
-const loadPreviews = async () => {
+const loadPreviews = () => {
   if (!locale.value) return;
-  const func = previews[locale.value as keyof typeof previews];
-  if (!func) return;
-  const module = await func();
-  loadedPreviews.value = module.default;
-  emit("loaded", module.default);
+
+  const data = previews[locale.value as keyof typeof previews];
+  if (!data) return;
+
+  loadedPreviews.value = data;
+  emit("loaded", data);
 };
 
 watch(locale, loadPreviews);
